@@ -1,0 +1,11 @@
+
+
+
+@Configuration
+public class RestClientConfig {
+    
+    @Bean
+    public RestTemplate restTemplate() {
+        return new RestTemplate();
+    }
+}

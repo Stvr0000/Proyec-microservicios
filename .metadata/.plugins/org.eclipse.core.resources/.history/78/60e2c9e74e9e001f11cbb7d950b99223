@@ -1,0 +1,5 @@
+package com.km.productoms.model;
+
+public class Producto {
+
+}

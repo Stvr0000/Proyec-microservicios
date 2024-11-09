@@ -1,0 +1,5 @@
+package com.km.cliente.entity;
+
+public class Cliente {
+
+}

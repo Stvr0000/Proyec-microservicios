@@ -1,0 +1,5 @@
+package com.km.productoms.repository;
+
+public interface ProductoRepository {
+
+}

@@ -1,0 +1,5 @@
+package com.km.cliente.config;
+
+public class RestClientConfig {
+
+}

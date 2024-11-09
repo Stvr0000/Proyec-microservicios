@@ -1,0 +1,12 @@
+package com.km.cliente.config;
+
+
+
+@Configuration
+public class RestClientConfig {
+    
+    @Bean
+    public RestTemplate restTemplate() {
+        return new RestTemplate();
+    }
+}

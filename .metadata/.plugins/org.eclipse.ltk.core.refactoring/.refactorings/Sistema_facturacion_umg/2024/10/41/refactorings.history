@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;generated-sources&apos; to &apos;Sistema_Facturacion--Clientes/src/main/java&apos;&#x0D;&#x0A;- Original project: &apos;Sistema_facturacion_umg&apos;&#x0D;&#x0A;- Destination element: &apos;Sistema_Facturacion--Clientes/src/main/java&apos;&#x0D;&#x0A;- Original element: &apos;generated-sources&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move folder" destination="=Sistema_Facturacion--Clientes/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/" element1="Sistema_Facturacion--Clientes/target/generated-sources" files="0" flags="589830" folders="1" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1728755028493" units="0" version="1.0"/>
+</session>

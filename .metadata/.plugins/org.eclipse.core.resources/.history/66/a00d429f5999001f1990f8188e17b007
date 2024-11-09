@@ -1,0 +1,24 @@
+package com.km.cliente.controller;
+
+@RestController
+@RequestMapping("/clientes")
+public class ClienteController {
+    
+    @Autowired
+    private ClienteService clienteService;
+    
+    @GetMapping
+    public List<Cliente> obtenerClientes() {
+        return clienteService.obtenerClientes();
+    }
+    
+    @GetMapping("/{id}")
+    public Cliente obtenerClientePorId(@PathVariable Long id) {
+        return clienteService.obtenerClientePorId(id);
+    }
+    
+    @PostMapping
+    public Cliente crearCliente(@RequestBody Cliente cliente) {
+        return clienteService.crearCliente(cliente);
+    }
+}

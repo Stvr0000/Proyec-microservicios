@@ -1,0 +1,5 @@
+package com.km.cliente.dao;
+
+public interface ClienteRepository {
+
+}

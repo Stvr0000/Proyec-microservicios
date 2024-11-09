@@ -1,0 +1,52 @@
+package com.km.cliente.service;
+
+
+import com.km.cliente.model.Cliente;
+import com.km.cliente.repository.ClienteRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.Optional;
+
+@Service
+public class ClienteService {
+
+    private final ClienteRepository clienteRepository;
+
+    @Autowired
+    public ClienteService(ClienteRepository clienteRepository) {
+        this.clienteRepository = clienteRepository;
+    }
+
+    /**
+     * Obtiene todos los clientes.
+     *
+     * @return Lista de clientes.
+     */
+    public List<Cliente> obtenerClientes() {
+        return clienteRepository.findAll();
+    }
+
+    /**
+     * Obtiene un cliente por ID.
+     *
+     * @param id ID del cliente.
+     * @return Cliente encontrado o lanza excepción si no existe.
+     */
+    public Cliente obtenerClientePorId(Long id) {
+        return clienteRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Cliente no encontrado con ID: " + id));
+    }
+
+    /**
+     * Crea un nuevo cliente.
+     *
+     * @param cliente Cliente a crear.
+     * @return Cliente creado.
+     */
+    public Cliente crearCliente(Cliente cliente) {
+        return clienteRepository.save(cliente);
+    }
+}
+
